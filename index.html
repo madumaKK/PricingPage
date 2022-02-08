@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pricing Table</title>
+</head>
+<body>
+    <div class="top-banner">
+        <p class="current-plan"> Your currenr plan</p>
+        <p class="current-type"> Starter Trial . 5 pages</p>
+    </div>
+
+    <div class="container">
+        <h1 class="title"> Choose a plan</h1>
+        <div class="toggle-switch">
+            <span>Billed anually</span>
+            <input type="checkbox" class="toggler">
+            <span>Billed monthly</span>
+        </div>
+
+        <div class="cards">
+
+            <!-- Starter Plan -->
+            <div class="card" id="card-1">
+                <h1 class="card-tittle">Starter</h1>
+                <h2 class="card-price" id="Starter-price"> R1500 <span>/monthly</span></h2>
+                <ul class="card-plan">
+                    <li><b>5 pages</b> Website Design</li>
+                    <li><b>12 months</b> Starter Hosting</li>
+                    <li><b>* FREE</b> Domain Registration</li>
+                    <li><b>10 X</b> Email Accounts</li>
+                    <li><b>FREE SSL</b> with Lets Encrypt</li>
+                    <li><b>cPanel</b> Control Panel</li>
+                </ul>
+                <button type="button" class="card-btn" id="paymentNextPage"> Choose Plan</button>
+            </div>
+
+            <!-- Pro Plan -->
+            <div class="card active" id="card-2">
+                <h1 class="card-tittle">Pro</h1>
+                <h2 class="card-price" id="Pro-price"> R2500 <span>/monthly</span></h2>
+
+                <select id="pages">
+                    <option value="6">6 pages</option>
+                    <option value="7">7-10 pages</option>
+                    <option value="12">12 pages</option>
+                    <option value="15">15 pages</option>
+                </select>
+                <br>
+                <select id="Website-type">
+                    <option value="No">No graphics</option>
+                    <option value="Yes">With graphics</option>
+                </select>
+                <br>
+                <select id="Websitetype">
+                    <option value="Basic">Basic Website</option>
+                    <optgroup label="E-Commerce Website">
+                        <option value="Shop">Shopify</option>
+                        <option value="woo">woo commerce</option>
+                      </optgroup>
+                </select>
+
+                <span class="note">monthly active users</span>
+
+                <ul class="card-plan">
+                    <li><b>12 months</b> Starter Hosting</li>
+                    <li><b>* FREE</b> Domain Registration</li>
+                    <li><b>25 X</b> Email Accounts</li>
+                    <li><b>FREE SSL</b> with Lets Encrypt</li>
+                    <li><b>cPanel</b> Control Panel</li>
+                </ul>
+                <button type="button" class="card-btn" onclick="nextPage()"> Choose Plan</button>
+            </div>
+
+            <!-- Enterprise -->
+            <div class="card" id="card-3">
+                <h1 class="card-tittle">Enterprise</h1>
+                <h2 class="card-price"> Let's Talk! </h2>
+                <ul class="card-plan">
+                    <li><b>Unlimited pages</b> Website Design</li>
+                    <li><b>WebType</b> Basic or E-Commerce</li>
+                    <li><b>Graphics</b> Costumer to decide</li>
+                    <li><b>24 months</b> Starter Hosting</li>
+                    <li><b>* FREE</b> Domain Registration</li>
+                    <li><b>75 X</b> Email Accounts</li>
+                    <li><b>FREE SSL</b> with Lets Encrypt</li>
+                    <li><b>cPanel</b> Control Panel</li>
+                </ul>
+                <button type="button" class="card-btn"> Contact Us</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
